@@ -24,3 +24,7 @@ encode to der format
 ```ruby
 OpenSslEcUtils.to_der(pubkey)
 ```
+
+## TODO
+
+implement `to_pem` method
