@@ -1,3 +1,5 @@
+require 'openssl'
+
 module OpenSSLPKeyED
   def self.to_der(key)
     case key
