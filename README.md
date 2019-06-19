@@ -1,6 +1,6 @@
 # OpenSSLPKeyED
 
-This gem can encode/decode OpenSSL::PKey (EC/RSA/DSA/DH) to der/pem format
+This gem can encode/decode OpenSSL::PKey (EC/RSA) to der/pem format
 
 OpenSSL::PKey::EC class API is inconsistent with RSA, DSA and DH.
 - refs: https://github.com/ruby/openssl/issues/29
@@ -27,5 +27,5 @@ OpenSslEcUtils.to_der(pubkey)
 
 ## TODO
 
-- support EC to pem format
-- support RSA/DSA/DH
+- add support for EC to pem format
+- add support for DSA/DH

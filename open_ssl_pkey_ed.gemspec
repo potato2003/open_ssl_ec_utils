@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["potato2003"]
   spec.email         = ["potato2003@gmail.com"]
 
-  spec.summary       = "OpenSSL::PKey encoder/decoder to der/pem"
+  spec.summary       = "encode OpenSSL::PKey to der/pem"
   spec.description   = ""
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|

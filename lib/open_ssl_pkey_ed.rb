@@ -1,9 +1,19 @@
 module OpenSSLPKeyED
   def self.to_der(key)
-    if public_key?(key)
+    case key
+    when OpenSSL::PKey::EC::Point # EC public key
       asn1(key).to_der
-    else
+    when OpenSSL::PKey::EC, OpenSSL::PKey::RSA, OpenSSL::PKey::DSA, OpenSSL::PKey::DH
       key.to_der
+    end
+  end
+
+  def self.to_pem(key)
+    case key
+    when OpenSSL::PKey::EC::Point # EC public key
+      raise "not supported OpenSSL::PKey::EC's public key yet", NotImplementedError
+    when OpenSSL::PKey::EC, OpenSSL::PKey::RSA, OpenSSL::PKey::DSA, OpenSSL::PKey::DH
+      key.to_pem
     end
   end
 
