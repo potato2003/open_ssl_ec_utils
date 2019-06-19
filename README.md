@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/open_ssl_pkey_ed.svg)](https://badge.fury.io/rb/open_ssl_pkey_ed)
+
 # OpenSSLPKeyED
 
 This gem can encode/decode OpenSSL::PKey (EC/RSA) to der/pem format
