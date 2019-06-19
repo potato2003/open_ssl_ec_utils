@@ -14,7 +14,7 @@ This gem provieds `to_der` method to solve it problem.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'open_ssl_ec_utils'
+gem 'open_ssl_pkey_ed'
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ gem 'open_ssl_ec_utils'
 encode to der format
 
 ```ruby
-OpenSslEcUtils.to_der(pubkey)
+OpenSSLPKeyED.to_der(pubkey)
 ```
 
 ## TODO
