@@ -1,4 +1,4 @@
-module OpenSslEcUtils
+module OpenSSLPKeyED
   def self.to_der(key)
     if public_key?(key)
       asn1(key).to_der

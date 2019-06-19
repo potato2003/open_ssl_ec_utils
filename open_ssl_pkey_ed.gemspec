@@ -2,12 +2,12 @@ lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = "open_ssl_ec_utils"
+  spec.name          = "open_ssl_pkey_ed"
   spec.version       = "0.0.1"
   spec.authors       = ["potato2003"]
   spec.email         = ["potato2003@gmail.com"]
 
-  spec.summary       = "OpenSSL::PKey::EC utility, this can generate a der-encoded public key"
+  spec.summary       = "OpenSSL::PKey encoder/decoder to der/pem"
   spec.description   = ""
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|

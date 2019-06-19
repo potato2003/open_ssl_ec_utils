@@ -1,6 +1,6 @@
-# OpenSslEcUtils
+# OpenSSLPKeyED
 
-This can generate a der-encoded public key.
+This gem can encode/decode OpenSSL::PKey (EC/RSA/DSA/DH) to der/pem format
 
 OpenSSL::PKey::EC class API is inconsistent with RSA, DSA and DH.
 - refs: https://github.com/ruby/openssl/issues/29
@@ -24,3 +24,8 @@ encode to der format
 ```ruby
 OpenSslEcUtils.to_der(pubkey)
 ```
+
+## TODO
+
+- support EC to pem format
+- support RSA/DSA/DH

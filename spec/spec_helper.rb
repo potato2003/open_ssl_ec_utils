@@ -1,5 +1,6 @@
 require "bundler/setup"
-require "open_ssl_ec_pubkey_utils"
+require "open_ssl_pkey_ed"
+require "openssl"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
